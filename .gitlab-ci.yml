@@ -10,7 +10,7 @@ services:
 
 stages:
   - build
-  - deploy
+  - pages
 
 docker-build:
   stage: build
@@ -32,17 +32,17 @@ docker-build:
   tags:
     - stable
 
-deploy-site:
+pages:
   stage: deploy
-  before_script:
-    - docker run rocker/tidyverse:latest
-    - R -e "install.packages('pkgdown')"
-  script:
-    - R -e "usethis::use_pkgdown()"
-    - R -e "pkgdown::build_site()"
+#  before_script:
+#    - docker run rocker/tidyverse:latest
+#    - R -e "install.packages('pkgdown')"
+script:
+  -  - mv docs public
+#    - R -e "pkgdown::build_site()"
   artifacts:
     paths:
-    - docs
+    - public
 
   # Run this job in a branch where a Dockerfile exists
   only:
