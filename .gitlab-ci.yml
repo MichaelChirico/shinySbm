@@ -40,7 +40,7 @@ pages:
     - mv docs public
   artifacts:
     paths:
-       - public
+     - public
   only:
    - website
    - pushes
