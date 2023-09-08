@@ -10,6 +10,7 @@ services:
 
 stages:
   - build
+  - deploy
 
 docker-build:
   stage: build
@@ -21,13 +22,25 @@ docker-build:
   # All other branches are tagged with the escaped branch name (commit ref slug)
   script:
     - docker build -f Dockerfile --progress=plain -t $IMAGE_TAG .
-    - docker push $IMAGE_TAG 
+    - docker push $IMAGE_TAG
     - docker tag $IMAGE_TAG $CI_REGISTRY_IMAGE
     - docker push $CI_REGISTRY_IMAGE
 
   # Run this job in a branch where a Dockerfile exists
   only:
     - tags
+  tags:
+    - stable
+
+ deploy-site:
+  stage: deploy
+  artifacts:
+    paths:
+    - public
+
+  # Run this job in a branch where a Dockerfile exists
+  only:
+    - website
   tags:
     - stable
 
