@@ -36,7 +36,7 @@ deploy-site:
   stage: deploy
   artifacts:
     paths:
-    - public
+    - docs
 
   # Run this job in a branch where a Dockerfile exists
   only:
