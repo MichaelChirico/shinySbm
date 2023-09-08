@@ -3,8 +3,8 @@ pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   ShinySbmApp: ShinySbmApp.html
-last_built: 2023-09-08T10:23Z
+last_built: 2023-09-08T10:29Z
 urls:
-  reference: https://theodore.vanrenterghem.gitlab.io/shinySbm/reference
-  article: https://theodore.vanrenterghem.gitlab.io/shinySbm/articles
+  reference: https://theodore.vanrenterghem.pages.mia.inra.fr/shinySbm/reference
+  article: https://theodore.vanrenterghem.pages.mia.inra.fr/shinySbm/articles
 
