@@ -10,7 +10,7 @@ services:
 
 stages:
   - build
-  - pages
+  - deploy
 
 docker-build:
   stage: build
