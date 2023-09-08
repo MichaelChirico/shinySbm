@@ -34,20 +34,14 @@ docker-build:
 
 pages:
   stage: deploy
-#  before_script:
-#    - docker run rocker/tidyverse:latest
-#    - R -e "install.packages('pkgdown')"
-script:
-  -  - mv docs public
-#    - R -e "pkgdown::build_site()"
+  script:
+     - mv docs public
   artifacts:
     paths:
-    - public
-
-  # Run this job in a branch where a Dockerfile exists
+       - public
   only:
-    - website
-    - pushes
+   - website
+   - pushes
   tags:
     - stable
 
