@@ -44,4 +44,5 @@ pages:
    - pushes
   tags:
     - stable
+  environment: production
 
