@@ -44,8 +44,8 @@ pages:
     paths:
        - public
   only:
-   - main
-   - tags
+   - website
+   - pushes
   tags:
     - stable
   environment: production
