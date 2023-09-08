@@ -34,9 +34,7 @@ docker-build:
 
 pages:
   stage: deploy
-  images: rocker/rstudio
-  before_script:
-    - R -e 'install.packages("pkgdown")'
+  images: registry.forgemia.inra.fr/theodore.vanrenterghem/docker-finistr:pkgdown_website
   script:
     - R -e 'usethis::use_pkgdown(); pkgdown::build_site()'
      - mv docs public
