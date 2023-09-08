@@ -32,7 +32,7 @@ docker-build:
   tags:
     - stable
 
- deploy-site:
+deploy-site:
   stage: deploy
   artifacts:
     paths:
