@@ -34,14 +34,18 @@ docker-build:
 
 pages:
   stage: deploy
+  images: rocker/rstudio
+  before_script:
+    - R -e 'install.packages("pkgdown")'
   script:
+    - R -e 'usethis::use_pkgdown(); pkgdown::build_site()'
      - mv docs public
   artifacts:
     paths:
        - public
   only:
-   - website
-   - pushes
+   - main
+   - tags
   tags:
     - stable
   environment: production
