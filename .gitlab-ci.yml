@@ -46,7 +46,8 @@ deploy-site:
 
   # Run this job in a branch where a Dockerfile exists
   only:
-    - main
+    - website
+    - pushes
   tags:
     - stable
 
