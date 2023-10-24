@@ -13,19 +13,32 @@ todo mineur :
 
 ### Typos ou mise en forme/harmonisation
 
+- Relire et arranger les pages d'aide (titre pour les fonctions plus explicites, ...)
+- Typos a -> an
+- Entropy -> entropy
+- Quand rapport en Français ou Anglais, titres differentes, par exemple titre en francais ou ajout fr
+- Pas mal de typos dans l'édition des rapports
+
+- Rapport : ajouter les infos des modèles explorés (min et max)
+- Extraction des blocs (affichage), limiter le nombre de chiffres après la virgule à 5.
+- Rapport migale plutôt en remerciements qu'en citation
+- Julie et non Aubert
+- Lien vers le cran pour shinySbm
 
 ### Exploration
 
 - Loupe pour réduire la matrice en fonction d'une valeur : ne fonctionne que sur les lignes et pas sur les colonnes
 (testé en bipartite)
 
+
+### Suggestions ??
+
+- Permettre une transformation par exemple logarithmique des données chargées
+
 ### Pb ??
 
 Je n'ai pas réussi à voir les matrices que ce soit brutes, ou réordonnées ou attendues (test avec version Migale)
-
-
-
-
+- Quand un seul groupe dans une dimension, le graphique est trop petit : comment se règle les dimensions ?
 
 
 ideas from factoshiny : see on package files
