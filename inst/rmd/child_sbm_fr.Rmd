@@ -45,7 +45,7 @@ if (R$sbm$ICL != max(R$sbm$storedModels$ICL)) {
     nb_block_best, " blocs ", bip_best
   )
 } else {
-  entrop_cur <- paste0("Sur tout les SBM observ", "\ue9", "s ce mod", "\ue8", "le ", "\ue0", " l'ICL la plus ", "\ue9", "l", "\ue9", "v", "\ue9", "e, c'est le plus vraisemblable")
+  entrop_cur <- paste0("Sur tous les SBM observ", "\ue9", "s ce mod", "\ue8", "le ", "\ue0", " l'ICL la plus ", "\ue9", "l", "\ue9", "v", "\ue9", "e, c'est le plus vraisemblable")
 }
 ```
 

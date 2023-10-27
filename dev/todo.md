@@ -21,6 +21,12 @@ todo mineur :
 
 - Rapport : ajouter les infos des modèles explorés (min et max)
 - Extraction des blocs (affichage), limiter le nombre de chiffres après la virgule à 5.
+
+```{r block-connectivity, echo=FALSE,results='asis',warning=FALSE}
+get_flextable(R$sbm,R$upload$labels,type = "connectParam", settings = list(caption = paste0("Connectivit",'\ue9'," des blocs"),digits = XXX)) %>% 
+  fit_width_to_output()
+```
+
 - Rapport migale plutôt en remerciements qu'en citation
 - Julie et non Aubert
 - Lien vers le cran pour shinySbm
