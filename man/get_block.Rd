@@ -27,13 +27,13 @@ get_block(
 \item{proportion}{Boolean indicating whether or not the produced tables should contain the probabilities to belong in each blocks. These columns shows for every nodes and every blocks the probabilities that the node belong to the block.}
 }
 \value{
-\itemize{
+\describe{
  \item{"bipartite case": }{A list containing two data.frames with block attributions and/or proportions one for the row blocks and one for the column blocks}
  \item{"unipartite case": }{A data.frame with block attributions and/or proportions}
  }
 }
 \description{
-A fct that return blocks attribution or probabilities for each nodes in a Sbm fit from the {sbm} package.
+A fct that return blocks attribution or probabilities for each nodes in a Sbm fit from the \pkg{sbm} package.
 }
 \examples{
 

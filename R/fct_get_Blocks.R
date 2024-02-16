@@ -1,6 +1,6 @@
 #' get_block generic
 #'
-#' @description A fct that return blocks attribution or probabilities for each nodes in a Sbm fit from the {sbm} package.
+#' @description A fct that return blocks attribution or probabilities for each nodes in a Sbm fit from the \pkg{sbm} package.
 #'
 #' @param x Sbm model of class `BipartiteSBM_fit`, `SimpleSBM_fit`.
 #' @param labels labels for nodes. If it's simple sbm it should be a single character ("default" -> c("nodes")). If sbm is bipartite a named character (names are row and col) ("default" -> c(row = 'row', col = 'col')).
@@ -14,7 +14,7 @@
 #'
 #'
 #' @return
-#' \itemize{
+#' \describe{
 #'  \item{"bipartite case": }{A list containing two data.frames with block attributions and/or proportions one for the row blocks and one for the column blocks}
 #'  \item{"unipartite case": }{A data.frame with block attributions and/or proportions}
 #'  }
@@ -56,7 +56,7 @@ get_block <- function(x, labels = "default", node_names = NULL,
 
 #' get_block.SimpleSBM_fit method
 #'
-#' @description A fct that return blocks attribution or probabilities for each nodes in a Sbm fit from the {sbm} package.
+#' @description A fct that return blocks attribution or probabilities for each nodes in a Sbm fit from the \pkg{sbm} package.
 #'
 #' @param x Sbm model of class `SimpleSBM_fit`.
 #' @param labels labels for nodes. If it's simple sbm it should be a single character ("default" -> c("nodes")). If sbm is bipartite a named character (names are row and col) ("default" -> c(row = 'row', col = 'col')).
@@ -133,7 +133,7 @@ get_block.SimpleSBM_fit <- function(x,
 
 #' get_block.BipartiteSBM_fit method
 #'
-#' @description A fct that return blocks attribution or probabilities for each nodes in a Sbm fit from the {sbm} package.
+#' @description A fct that return blocks attribution or probabilities for each nodes in a Sbm fit from the \pkg{sbm} package.
 #'
 #' @param x Sbm model of class `BipartiteSBM_fit`.
 #' @param labels labels for nodes. If it's simple sbm it should be a single character ("default" -> c("nodes")). If sbm is bipartite a named character (names are row and col) ("default" -> c(row = 'row', col = 'col')).

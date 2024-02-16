@@ -21,7 +21,7 @@ If sbm is bipartite a named character (names are row and col) ("default" -> c(ro
 \item{node_names}{if NULL do nothing specific, but list of nodes are given
 the graph get interactive and nodes names are showed by clicking on a block.
 In bipartite case a named list:
-\itemize{
+\describe{
  \item{"row": }{character: node names in rows}
  \item{"col": }{character: node names in columns}
  }
@@ -35,11 +35,11 @@ In bipartite case a named list:
 a visNetwork visual of the x object
 }
 \description{
-A fct that plot a {visNetwork} plot of a adjacency matrix or an Sbm fit from the {sbm} package.
+A fct that plot a \pkg{visNetwork} plot of a adjacency matrix or an Sbm fit from the \pkg{sbm} package.
 }
 \details{
 List of parameters
-\itemize{
+\describe{
  \item{"edge_threshold": }{"default" erases as many small edges as it can without isolating any nodes (no connection).
  It can also be a numeric value between 0 and 1, relative (between min and max) filter for small edges value}
  \item{"edge_color": }{character: color of edges (default: "lightblue")}

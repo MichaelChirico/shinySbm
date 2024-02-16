@@ -112,7 +112,7 @@ prePlotNet <- function(matrix,
 
 #' visSbm
 #'
-#' @description A fct that plot a {visNetwork} plot of a adjacency matrix or an Sbm fit from the {sbm} package.
+#' @description A fct that plot a \pkg{visNetwork} plot of a adjacency matrix or an Sbm fit from the \pkg{sbm} package.
 #'
 #' @param x Sbm model of class `BipartiteSBM_fit`, `SimpleSBM_fit` or simple numeric `matrix`.
 #' @param labels labels for nodes. If it's simple sbm it should be a single character ("default" -> c("nodes")).
@@ -120,7 +120,7 @@ prePlotNet <- function(matrix,
 #' @param node_names if NULL do nothing specific, but list of nodes are given
 #' the graph get interactive and nodes names are showed by clicking on a block.
 #' In bipartite case a named list:
-#' \itemize{
+#' \describe{
 #'  \item{"row": }{character: node names in rows}
 #'  \item{"col": }{character: node names in columns}
 #'  }
@@ -129,7 +129,7 @@ prePlotNet <- function(matrix,
 #' @param settings list of settings
 #'
 #' @details List of parameters
-#' \itemize{
+#' \describe{
 #'  \item{"edge_threshold": }{"default" erases as many small edges as it can without isolating any nodes (no connection).
 #'  It can also be a numeric value between 0 and 1, relative (between min and max) filter for small edges value}
 #'  \item{"edge_color": }{character: color of edges (default: "lightblue")}
@@ -193,7 +193,7 @@ visSbm <- function(x,
 
 #' visSbm
 #'
-#' @description A fct that plot a {visNetwork} plot of a adjacency matrix or an Sbm fit from the {sbm} package.
+#' @description A fct that plot a \pkg{visNetwork} plot of a adjacency matrix or an Sbm fit from the \pkg{sbm} package.
 #'
 #' @param x Sbm model of class `BipartiteSBM_fit`, `SimpleSBM_fit` or simple numeric `matrix`.
 #' @param labels labels for nodes. If it's simple sbm it should be a single character ("default" -> c("nodes")).
@@ -201,7 +201,7 @@ visSbm <- function(x,
 #' @param node_names if NULL do nothing specific, but list of nodes are given
 #' the graph get interactive and nodes names are showed by clicking on a block.
 #' In bipartite case a named list:
-#' \itemize{
+#' \describe{
 #'  \item{"row": }{character: node names in rows}
 #'  \item{"col": }{character: node names in columns}
 #'  }
@@ -210,7 +210,7 @@ visSbm <- function(x,
 #' @param settings list of settings
 #'
 #' @details List of parameters
-#' \itemize{
+#' \describe{
 #'  \item{"edge_threshold": }{"default" erases as many small edges as it can without isolating any nodes (no connection).
 #'  It can also be a numeric value between 0 and 1, relative (between min and max) filter for small edges value}
 #'  \item{"edge_color": }{character: color of edges (default: "lightblue")}
@@ -238,7 +238,7 @@ visSbm.default <- function(x,
 
 #' visSbm
 #'
-#' @description A fct that plot a {visNetwork} plot of a adjacency matrix or an Sbm fit from the {sbm} package.
+#' @description A fct that plot a \pkg{visNetwork} plot of a adjacency matrix or an Sbm fit from the \pkg{sbm} package.
 #'
 #' @param x Sbm model of class `BipartiteSBM_fit`, `SimpleSBM_fit` or simple numeric `matrix`.
 #' @param labels labels for nodes. If it's simple sbm it should be a single character ("default" -> c("nodes")).
@@ -246,7 +246,7 @@ visSbm.default <- function(x,
 #' @param node_names if NULL do nothing specific, but list of nodes are given
 #' the graph get interactive and nodes names are showed by clicking on a block.
 #' In bipartite case a named list:
-#' \itemize{
+#' \describe{
 #'  \item{"row": }{character: node names in rows}
 #'  \item{"col": }{character: node names in columns}
 #'  }
@@ -255,7 +255,7 @@ visSbm.default <- function(x,
 #' @param settings list of settings
 #'
 #' @details List of parameters
-#' \itemize{
+#' \describe{
 #'  \item{"edge_threshold": }{"default" erases as many small edges as it can without isolating any nodes (no connection).
 #'  It can also be a numeric value between 0 and 1, relative (between min and max) filter for small edges value}
 #'  \item{"edge_color": }{character: color of edges (default: "lightblue")}
@@ -368,7 +368,7 @@ visSbm.BipartiteSBM_fit <- function(x,
 
 #' visSbm
 #'
-#' @description A fct that plot a {visNetwork} plot of a adjacency matrix or an Sbm fit from the {sbm} package.
+#' @description A fct that plot a \pkg{visNetwork} plot of a adjacency matrix or an Sbm fit from the \pkg{sbm} package.
 #'
 #' @param x Sbm model of class `BipartiteSBM_fit`, `SimpleSBM_fit` or simple numeric `matrix`.
 #' @param labels labels for nodes. If it's simple sbm it should be a single character ("default" -> c("nodes")).
@@ -376,7 +376,7 @@ visSbm.BipartiteSBM_fit <- function(x,
 #' @param node_names if NULL do nothing specific, but list of nodes are given
 #' the graph get interactive and nodes names are showed by clicking on a block.
 #' In bipartite case a named list:
-#' \itemize{
+#' \describe{
 #'  \item{"row": }{character: node names in rows}
 #'  \item{"col": }{character: node names in columns}
 #'  }
@@ -385,7 +385,7 @@ visSbm.BipartiteSBM_fit <- function(x,
 #' @param settings list of settings
 #'
 #' @details List of parameters
-#' \itemize{
+#' \describe{
 #'  \item{"edge_threshold": }{"default" erases as many small edges as it can without isolating any nodes (no connection).
 #'  It can also be a numeric value between 0 and 1, relative (between min and max) filter for small edges value}
 #'  \item{"edge_color": }{character: color of edges (default: "lightblue")}

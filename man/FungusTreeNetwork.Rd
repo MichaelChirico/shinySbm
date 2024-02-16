@@ -9,7 +9,7 @@ A list of the following entries:
 
 \describe{
  \item{networks}{
-   \itemize{
+   \describe{
      \item{tree_names: (character) tree names}
      \item{fungus_names: (character) fungus names}
      \item{tree_tree}{
@@ -29,10 +29,10 @@ A list of the following entries:
    }
  }
  \item{sbmResults}{
-   \itemize{
-     \item{tree_tree}{Results of \code{estimateSimpleSBM} for {sbm}
+   \describe{
+     \item{tree_tree}{Results of \code{sbm::estimateSimpleSBM}
      applied on tree_tree data with a Poisson model.}
-     \item{fungus_tree}{Results of \code{estimateBipartiteSBM} for {sbm}
+     \item{fungus_tree}{Results of \code{sbm::estimateBipartiteSBM}
      applied on fungus_tree data with a Bernoulli model.}
    }
  }
@@ -48,6 +48,6 @@ FungusTreeNetwork
 fungus-tree interaction network
 
 This data set provides information about $154$ fungi sampled on $51$ tree species.
-Composed of nodes and edges lists build based on `sbm` data package.
+Composed of nodes and edges lists build based on \pkg{sbm} data package.
 }
 \keyword{datasets}

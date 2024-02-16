@@ -1,6 +1,6 @@
 #' round_proportion
 #'
-#' @description A fct that apply round() to a proportion vector (between 0 and 1, and summing to 1). Round by digits, and adjust the last element to the summing to 1 condition
+#' @description A function that apply round() to a proportion vector (between 0 and 1, and summing to 1). Round by digits, and adjust the last element to the summing to 1 condition
 #'
 #' @param x vector of proportions
 #' @param digits number of digits, will be evaluated by round
@@ -205,14 +205,14 @@ flexStoredModels <- function(sbm, labels,
 #'
 #' @description A fct that build a flextable from an sbm object
 #'
-#' @param sbm an sbm model product of {sbm} estimation (simple or bipartite)
+#' @param sbm an sbm model product of \pkg{sbm} estimation (simple or bipartite)
 #' @param labels labels for nodes.
 #' If it's simple sbm it should be a single character ("default" -> c("nodes")).
 #' If sbm is bipartite a named character (names are row and col) ("default" -> c(row = 'row', col = 'col')).
 #' @param type the type of table wanted.
 #'
 #' @details Values of \code{type}
-#' \itemize{
+#' \describe{
 #'  \item{'blockProp': }{gives the block proportions.}
 #'  \item{'connectParam': }{gives the block connectivity.}
 #'  \item{'storedModels': }{gives the stored modems summary.}
@@ -222,7 +222,7 @@ flexStoredModels <- function(sbm, labels,
 #'
 #' @details The list of parameters \code{settings} for the flextable
 #'
-#' \itemize{
+#' \describe{
 #'  \item{"caption": }{Caption is the flextable title (character)}
 #'  \item{"digits": }{nb of digits wanted to be shown in the table}
 #'  \item{"selected_col": }{Color highlighting the selected model}

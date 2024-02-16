@@ -33,7 +33,7 @@ plotSbm method for BipartiteSBM_fit object
 }
 \details{
 The list of parameters \code{plotOptions} for the matrix plot is
-\itemize{
+\describe{
  \item{"showValues": }{Boolean. Set TRUE to see the real values. Default value is TRUE}
  \item{"showPredictions": }{Boolean. Set TRUE to see the predicted values. Default value is TRUE}
  \item{"title": }{Title in characters. Will be printed at the bottom of the matrix. Default value is NULL}

@@ -12,7 +12,7 @@ get_flextable(
 )
 }
 \arguments{
-\item{sbm}{an sbm model product of {sbm} estimation (simple or bipartite)}
+\item{sbm}{an sbm model product of \pkg{sbm} estimation (simple or bipartite)}
 
 \item{labels}{labels for nodes.
 If it's simple sbm it should be a single character ("default" -> c("nodes")).
@@ -30,7 +30,7 @@ A fct that build a flextable from an sbm object
 }
 \details{
 Values of \code{type}
-\itemize{
+\describe{
  \item{'blockProp': }{gives the block proportions.}
  \item{'connectParam': }{gives the block connectivity.}
  \item{'storedModels': }{gives the stored modems summary.}
@@ -38,7 +38,7 @@ Values of \code{type}
 
 The list of parameters \code{settings} for the flextable
 
-\itemize{
+\describe{
  \item{"caption": }{Caption is the flextable title (character)}
  \item{"digits": }{nb of digits wanted to be shown in the table}
  \item{"selected_col": }{Color highlighting the selected model}

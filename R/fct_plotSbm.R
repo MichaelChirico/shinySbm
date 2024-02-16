@@ -12,7 +12,7 @@
 #' @param plotOptions a list providing options. See details below.
 #'
 #' @details The list of parameters \code{plotOptions} for the matrix plot is
-#' \itemize{
+#' \describe{
 #'  \item{"showValues": }{Boolean. Set TRUE to see the real values. Default value is TRUE}
 #'  \item{"showPredictions": }{Boolean. Set TRUE to see the predicted values. Default value is TRUE}
 #'  \item{"title": }{Title in characters. Will be printed at the bottom of the matrix. Default value is NULL}
@@ -94,7 +94,7 @@ plotSbm.default <- function(x, ordered = FALSE, transpose = FALSE,
 #' @param plotOptions list providing options. See details below.
 #'
 #' @details The list of parameters \code{plotOptions} for the matrix plot is
-#' \itemize{
+#' \describe{
 #'  \item{"showValues": }{Boolean. Set TRUE to see the real values. Default value is TRUE}
 #'  \item{"showPredictions": }{Boolean. Set TRUE to see the predicted values. Default value is TRUE}
 #'  \item{"title": }{Title in characters. Will be printed at the bottom of the matrix. Default value is NULL}
@@ -271,7 +271,7 @@ plotSbm.BipartiteSBM_fit <- function(x, ordered = FALSE,
 #' @param plotOptions list providing options. See details below.
 #'
 #' @details The list of parameters \code{plotOptions} for the matrix plot is
-#' \itemize{
+#' \describe{
 #'  \item{"showValues": }{Boolean. Set TRUE to see the real values. Default value is TRUE}
 #'  \item{"showPredictions": }{Boolean. Set TRUE to see the predicted values. Default value is TRUE}
 #'  \item{"title": }{Title in characters. Will be printed at the bottom of the matrix. Default value is NULL}
@@ -430,7 +430,7 @@ plotSbm.SimpleSBM_fit <- function(x, ordered = FALSE, transpose = FALSE,
 #' @param plotOptions list providing options. See details below.
 #'
 #' @details The list of parameters \code{plotOptions} for the matrix plot is
-#' \itemize{
+#' \describe{
 #'  \item{"showValues": }{Boolean. Set TRUE to see the real values. Default value is TRUE}
 #'  \item{"showPredictions": }{Boolean. Set TRUE to see the predicted values. Default value is TRUE}
 #'  \item{"title": }{Title in characters. Will be printed at the bottom of the matrix. Default value is NULL}

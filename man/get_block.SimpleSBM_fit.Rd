@@ -27,7 +27,7 @@
 A data.frame with block attributions and/or proportions
 }
 \description{
-A fct that return blocks attribution or probabilities for each nodes in a Sbm fit from the {sbm} package.
+A fct that return blocks attribution or probabilities for each nodes in a Sbm fit from the \pkg{sbm} package.
 }
 \examples{
 
